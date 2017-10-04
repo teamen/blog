@@ -1,0 +1,25 @@
+{% extends "_master.twig" %}
+{% block title %}Essays{% endblock %}
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+
+{% block bodyClass %}body--essays{% endblock %}
+
+{% block bread %}/essays{% endblock %}
+
+{% block containerClass %}container--essays{% endblock %}
+{% block content %}
+    <ul class="essay-list">
+    {% for essay in essays %}
+        <li class="essay-list__item">
+            <span class="time">{{ essay.editedAt }}</span>
+            <a class="title" href="{{ essay.filename  }}.html">{{ essay.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+

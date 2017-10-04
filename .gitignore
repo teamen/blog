@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+node_modules
+.idea
+vendor
+storage/*
+dist/statics/____scripts
+dist/statics/____styles
+dist/.git

@@ -1,0 +1,42 @@
+{% extends "_master.twig" %}
+{% block title %}{{ essay.title }}{% endblock %}
+
+{% block bodyClass %}body--essay{% endblock %}
+
+{% block bread %}/essays/{{ essay.title  }}{% endblock %}
+
+{% block containerClass %}container--essay{% endblock %}
+
+
+{% block content %}
+
+    <div class="container-wrapper container-wrapper--essay">
+
+        <div class="essay-item">
+            <div class="essay-item__header">
+                <h1>
+                    {{ essay.title }}
+                </h1>
+                <div class="date">
+                    {{ essay.editedAt }}
+                </div>
+            </div>
+
+            <div class="essay-item__container">
+                <div class="typo">
+                    {% autoescape false %}
+                        {{ essay.content }}
+                    {% endautoescape %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+
+
+

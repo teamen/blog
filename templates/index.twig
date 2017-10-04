@@ -1,0 +1,33 @@
+{% extends "_master.twig" %}
+{% block title%}Index{% endblock %}
+{% block header %}{{ parent() }}{% endblock %}
+{% block bodyClass %}body--index{% endblock %}
+
+
+{% block bread %}{% endblock %}
+
+{% block containerClass %}container--index{% endblock %}
+{% block content %}
+    <div class="main">
+        <div class="main-wrapper">
+            <div class="main__name">
+                <strong>一條人 | Wayne Tse</strong>
+            </div>
+            <ul class="main__menu">
+                <li class="item">
+                    <a href="https://github.com/teamen" target="_blank">Github</a>
+                </li>
+                <li class="item">
+                    <a href="mailto:294881599@qq.com">Email</a>
+                </li>
+                <li class="item">
+                    <a href="essays.html">Essays</a>
+                </li>
+                <li class="item item--last">
+                    <a href="http://weibo.com/weapon1993" target="_blank">Weibo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

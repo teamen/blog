@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{% block title %}{% endblock %} - YiTiaoRen</title>
+
+    {% for item in bundles %}
+        {% if item.js is defined %}
+             <script src="{{ item.js | slice(1)}}"></script>
+        {% endif %}
+        {% if item.css is defined %}
+            <link rel="stylesheet" href="{{ item.css | slice(1)}}">
+        {% endif %}
+    {% endfor %}
+
+
+    {% for item in statics %}
+        {% if item.js is defined %}
+             <script src="{{ item.js |slice(1) }}"></script>
+        {% endif %}
+        {% if item.css is defined %}
+             <link rel="stylesheet" href="{{ item.css|slice(1) }}">
+        {% endif %}
+    {% endfor %}
+
+    {% block header %}{% endblock %}
+
+</head>
+<body class="body {% block bodyClass %}{% endblock %}">
+<div class="nav">
+    <div class="nav__logo">
+        <a class="link" href="index.html">yitiaoren.com</a>
+    </div>
+    <div class="nav__bread">
+        {% block bread %}{% endblock %}
+    </div>
+</div>
+
+<div class="container {% block containerClass %}{% endblock %}">
+    {% block content %}{% endblock %}
+</div>
+
+
+{% block footer %}
+    <div class="footer">
+        <div class="footer__copyright">
+            &copy; 2017 Wayne Tse
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

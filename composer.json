@@ -1,0 +1,16 @@
+{
+    "name": "wayne/yitiaoren.com",
+    "description": "'transform markdown file to html page'",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wayne",
+            "email": "294881599@qq.com"
+        }
+    ],
+    "require": {
+        "illuminate/filesystem": "^5.5",
+        "twig/twig": "~2.0",
+        "cebe/markdown": "^1.1"
+    }
+}
