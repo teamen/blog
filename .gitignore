@@ -10,3 +10,5 @@ dist/.git
 
 dist/.DS_Store
 
+dist/CNAME
+dist/.gitignore
