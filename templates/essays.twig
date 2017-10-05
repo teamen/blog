@@ -1,5 +1,5 @@
 {% extends "_master.twig" %}
-{% block title %}Essays{% endblock %}
+{% block title %}Essays - {{ parent() }}{% endblock %}
 {% block header %}
     {{ parent() }}
 {% endblock %}
@@ -13,7 +13,7 @@
     <ul class="essay-list">
     {% for essay in essays %}
         <li class="essay-list__item">
-            <span class="time">{{ essay.editedAt }}</span>
+            <span class="time">{{ essay.editedAt|date('M j, Y') }}</span>
             <a class="title" href="{{ essay.filename  }}.html">{{ essay.title }}</a>
         </li>
     {% endfor %}

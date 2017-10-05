@@ -1,5 +1,5 @@
 {% extends "_master.twig" %}
-{% block title %}{{ essay.title }}{% endblock %}
+{% block title %}{{ essay.title }} - {{ parent() }}{% endblock %}
 
 {% block bodyClass %}body--essay{% endblock %}
 

@@ -7,3 +7,6 @@ storage/*
 dist/statics/____scripts
 dist/statics/____styles
 dist/.git
+
+dist/.DS_Store
+
