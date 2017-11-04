@@ -12,3 +12,4 @@ dist/.DS_Store
 
 dist/CNAME
 dist/.gitignore
+.DS_Store

@@ -27,7 +27,7 @@ if (webpackPath.isDist) {
             root: webpackPath.STATICS_DIR_PATH,
             verbose: true,
             dry: false,
-        })
+        }),
     );
 }
 
@@ -38,7 +38,7 @@ webpackPlugin.push(
     new webpack.DllReferencePlugin({
         context: __dirname,
         manifest: dllBundleJsonFile,
-    })
+    }),
 );
 
 
@@ -48,7 +48,7 @@ webpackPlugin.push(
         webpackPath,
         includeMap: false,
         iniFile: webpackPath.THEME_SHARE_STATICS_INI,
-    })
+    }),
 );
 
 

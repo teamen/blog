@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>跨平台設置 NODE_ENV - 一條人</title>
+
+                         <script src="statics/vendor/bundle_cda852384a56012d45e3.js"></script>
+                    
+
+                         <script src="statics/scripts/app_6bf41f40bfde9db1a9ed.js"></script>
+                             <link rel="stylesheet" href="statics/styles/app_6bf41f40bfde9db1a9ed.css">
+            
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="body body--essay">
+<div class="nav">
+    <div class="nav__logo">
+        <a class="link" href="index.html">yitiaoren.com</a>
+    </div>
+    <div class="nav__bread">
+        /essays/跨平台設置 NODE_ENV    </div>
+</div>
+
+<div class="container container--essay">
+    
+    <div class="container-wrapper container-wrapper--essay">
+
+        <div class="essay-item">
+            <div class="essay-item__header">
+                <h1>
+                    跨平台設置 NODE_ENV
+                </h1>
+                <div class="date">
+                    2017-11-05 01:35:21
+                </div>
+            </div>
+
+            <div class="essay-item__container">
+                <div class="typo">
+                                            <p>平日裡用 Mac 開發居多，使用到 webpack 的項目裡通常的 npm scripts 如下：</p>
+<pre><code>"scripts": {
+    "build": "NODE_ENV=production webpack -p --progress",
+    "dev": "NODE_ENV=development webpack --watch --progress"
+},    
+</code></pre>
+<p>卻發現在 windows 下， <em>webpack.config.js</em> 裡的 <em>process.env.NODE_ENV === 'production'</em> 的判斷不起作用。</p>
+<p>查閱資料發現在 windows 下，需要安装 <a href="https://github.com/kentcdodds/cross-env">cross-env</a>。</p>
+<p>npm scripts 得如下配置:</p>
+<pre><code>"scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --progress"
+}
+</code></pre>
+
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+    <div class="footer">
+        <div class="footer__copyright">
+            &copy; 2017 Wayne Tse
+        </div>
+    </div>
+</body>
+</html>
