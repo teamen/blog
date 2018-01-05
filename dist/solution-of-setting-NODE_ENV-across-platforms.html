@@ -48,9 +48,10 @@
 <pre><code>"scripts": {
     "build": "NODE_ENV=production webpack -p --progress",
     "dev": "NODE_ENV=development webpack --watch --progress"
-},    
+},
 </code></pre>
-<p>卻發現在 windows 下， <em>webpack.config.js</em> 裡的 <em>process.env.NODE_ENV === 'production'</em> 的判斷不起作用。</p>
+<p><br>
+卻發現在 windows 下， <em>webpack.config.js</em> 裡的 <em>process.env.NODE_ENV === 'production'</em> 的判斷不起作用。</p>
 <p>查閱資料發現在 windows 下，需要安装 <a href="https://github.com/kentcdodds/cross-env">cross-env</a>。</p>
 <p>npm scripts 得如下配置:</p>
 <pre><code>"scripts": {

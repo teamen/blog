@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>跨瀏覽器媒體查詢retina显示 - 一條人</title>
+
+                         <script src="statics/vendor/bundle_cda852384a56012d45e3.js"></script>
+                    
+
+                         <script src="statics/scripts/app_6bf41f40bfde9db1a9ed.js"></script>
+                             <link rel="stylesheet" href="statics/styles/app_6bf41f40bfde9db1a9ed.css">
+            
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="body body--essay">
+<div class="nav">
+    <div class="nav__logo">
+        <a class="link" href="index.html">yitiaoren.com</a>
+    </div>
+    <div class="nav__bread">
+        /essays/跨瀏覽器媒體查詢retina显示    </div>
+</div>
+
+<div class="container container--essay">
+    
+    <div class="container-wrapper container-wrapper--essay">
+
+        <div class="essay-item">
+            <div class="essay-item__header">
+                <h1>
+                    跨瀏覽器媒體查詢retina显示
+                </h1>
+                <div class="date">
+                    2018-01-04 23:45:12
+                </div>
+            </div>
+
+            <div class="essay-item__container">
+                <div class="typo">
+                                            <h3>需求</h3>
+<p>為 DIV 設置背景圖片，並通過媒體查詢在 2X 顯示器下，顯示 2X 圖片，非 Retina 瀏覽器顯示 1X 圖片。</p>
+<h3>實現效果</h3>
+<div class="bg-block">
+</div>
+<style>
+.bg-block {
+    height: 288px;
+    width: 512px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    background-clip: content-box;
+    margin: 40px auto;
+    /* non-retina display */
+    background-image: url("assets/images/bg.jpg");
+}
+/* works in ff/chrome/opera/ie>=9/edage */
+@media 
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    .bg-block {
+        background-image: url("assets/images/bg@2x.jpg");
+    }
+}
+</style>
+<h3>代碼</h3>
+<pre><code>&lt;div class="bg-block"&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.bg-block {
+    height: 288px;
+    width: 512px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    background-clip: content-box;
+    margin: 40px auto;
+    /* non-retina display */
+    background-image: url("assets/images/bg.jpg");
+}
+/* works in ff/chrome/opera/ie&gt;=9/edage */
+@media 
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .bg-block {
+            background-image: url("assets/images/bg@2x.jpg");
+        }
+    }
+&lt;/style&gt;
+
+
+</code></pre>
+<h3>相關文獻</h3>
+<ol>
+<li><a href="https://www.smashingmagazine.com/2012/08/towards-retina-web/">towards-retina-web</a></li>
+<li><a href="http://www.html-js.com/article/The-front-end-of-the-porter">【译】走向Retina Web</a></li>
+<li><a href="http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/">cross-browser-retinahigh-resolution-media-queries</a></li>
+<li><a href="https://css-tricks.com/snippets/css/retina-display-media-query/">retina-display-media-query</a></li>
+</ol>
+
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+    <div class="footer">
+        <div class="footer__copyright">
+            &copy; 2017 Wayne Tse
+        </div>
+    </div>
+</body>
+</html>
