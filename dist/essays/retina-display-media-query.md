@@ -1,4 +1,4 @@
-跨瀏覽器媒體查詢retina显示
+跨瀏覽器媒體查詢retina顯示
 2018-01-04 23:45:12
 
 ### 需求
@@ -36,7 +36,6 @@
 </style>
 
     
-
 ### 代碼
 
     <div class="bg-block">
@@ -64,7 +63,8 @@
         }
     </style>
 
-    
+<br>
+
 ### 相關文獻
 1. [towards-retina-web](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
 2. [【译】走向Retina Web](http://www.html-js.com/article/The-front-end-of-the-porter)
