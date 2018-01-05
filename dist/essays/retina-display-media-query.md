@@ -65,8 +65,6 @@
     </style>
 
     
-        
-      
 ### 相關文獻
 1. [towards-retina-web](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
 2. [【译】走向Retina Web](http://www.html-js.com/article/The-front-end-of-the-porter)
