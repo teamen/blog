@@ -1,6 +1,9 @@
 {% extends "_master.twig" %}
 {% block title %}{{ essay.title }} - {{ parent() }}{% endblock %}
 
+{% block keywords %}{{ parent() }} {{ essay.title  }}, {{ essay.filename  }}{% endblock %}
+{% block description %}{{ parent() }} - {{ essay.title  }}/{{ essay.filename  }}{% endblock %}
+
 {% block bodyClass %}body--essay{% endblock %}
 
 {% block bread %}/essays/{{ essay.title  }}{% endblock %}

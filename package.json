@@ -1,5 +1,5 @@
 {
-    "name": "yitiaoren.com",
+    "name": "waynetse.cn",
     "version": "1.0.0",
     "description": "Personal blog site",
     "main": "build/webpack.config.js",
@@ -14,7 +14,7 @@
     "keywords": [
         "blog.yitiaoren.com"
     ],
-    "author": "wayne <294881599@qq.com>",
+    "author": "wayne <waynetsecn@gmail.com>",
     "license": "MIT",
     "dependencies": {},
     "devDependencies": {

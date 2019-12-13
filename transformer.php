@@ -73,6 +73,7 @@ file_put_contents($staticHashPath, $filesystem->hash($staticsIniFile));
 file_put_contents($bundleHashPath, $filesystem->hash($bundleInifile));
 
 $context            = [];
+$context['currentYear'] = date('Y');
 $context['statics'] = $staticFiles;
 $context['bundles'] = $bundleFiles;
 

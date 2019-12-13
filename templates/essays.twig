@@ -4,6 +4,8 @@
     {{ parent() }}
 {% endblock %}
 
+{% block description %}{{ parent() }} - 文章列表{% endblock %}
+
 {% block bodyClass %}body--essays{% endblock %}
 
 {% block bread %}/essays{% endblock %}

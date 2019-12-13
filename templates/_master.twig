@@ -6,6 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="keywords" content="{% block keywords %}一条人, 一條人, 一條人的博客, 技術博客, 個人博客, 一條人的部落格, {% endblock %}"/>
+    <meta name="description" content="{% block description %}一條人的博客{% endblock %}"/>
+
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-title" content="{% block sitename %}一條人{% endblock %}">
+    <meta name="application-name" content="一條人的博客">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
     <title>{% block title %}一條人{% endblock %}</title>
 
     {% for item in bundles %}
@@ -28,12 +40,20 @@
     {% endfor %}
 
     {% block header %}{% endblock %}
-
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?51f2fc916ccf0de5f28f197517bd4c43";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 <body class="body {% block bodyClass %}{% endblock %}">
 <div class="nav">
     <div class="nav__logo">
-        <a class="link" href="index.html">yitiaoren.com</a>
+        <a class="link" href="index.html">waynetse.cn</a>
     </div>
     <div class="nav__bread">
         {% block bread %}{% endblock %}
@@ -44,11 +64,10 @@
     {% block content %}{% endblock %}
 </div>
 
-
 {% block footer %}
     <div class="footer">
         <div class="footer__copyright">
-            &copy; 2017 Wayne Tse
+            &copy; 2017 - {{ currentYear }} Wayne Tse
         </div>
     </div>
 {% endblock %}

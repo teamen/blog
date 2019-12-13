@@ -13,3 +13,8 @@ dist/.DS_Store
 dist/CNAME
 dist/.gitignore
 .DS_Store
+dist/*
+
+.DS_Store
+yarn.lock
+.DS_Store
